@@ -6,8 +6,8 @@ import pickle
 st.title("Student Score Predictor")
 
 ## Loading the models
-regressor = pickle.load(open('ridge.pkl','rb'))
-scaler = pickle.load(open('scaler.pkl','rb'))
+regressor = pickle.load(open('Models/ridge.pkl','rb'))
+scaler = pickle.load(open('Models/scaler.pkl','rb'))
 
 ## Taking the inputs on the home page
 hours_studied = st.number_input(label="Enter the Hours Studied:" ,min_value=0,step=1,max_value=24)
